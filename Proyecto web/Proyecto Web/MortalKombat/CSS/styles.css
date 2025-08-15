@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iconoMK {
+    position: fixed;
+    top: 50px;
+    /* Separación desde arriba */
+    left: 50px;
+    /* Separación desde la izquierda */
+    height: 60px;
+    /* Tamaño del logo */
+    z-index: 1000;
+    /* Para que quede encima de todo */
+}
+
+/* Imagen de fondo */
+.hero {
+    height: 100vh;
+    background: url('../img/fondo2.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Botón de menú (arriba a la derecha) */
+.botonMenu {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Botón Play (centro) */
+.botonTrailer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.767);
+    border-radius: 100%;
+    padding: 40px;
+    cursor: pointer;
+    color: rgb(61, 60, 60);
+}
+
+.seccion1 {
+    min-height: 100vh;
+    margin: 0;
+    padding: 100px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(3, 2, 1);
+}
+
+/* Texto principal con degradado */
+h2 {
+    margin: 0;
+    font-size: 3rem;
+    background: linear-gradient(to right, #faab00, #91610a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Logos */
+.logos {
+    margin-top: 0px;
+}
+
+.logos img {
+    height: 80px;
+    margin: 0px;
+    vertical-align: middle;
+}
