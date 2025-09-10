@@ -1,0 +1,19 @@
+.hero {
+    background-image: url("../img/imagen-hero.jpg"); /* tu imagen */
+    background-size: cover;      /* que ocupe todo */
+    background-position: center; /* centrada */
+    height: 100vh;               /* ocupa toda la pantalla */
+    position: relative;          /* para el overlay */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6); /* oscurece la imagen */
+}
+.hero > div {
+    position: relative;
+    z-index: 1; /* pone el texto encima del overlay */
+}
